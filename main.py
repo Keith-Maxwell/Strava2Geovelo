@@ -1,11 +1,9 @@
-
 from pathlib import Path
 
 from playwright.sync_api import Playwright, TimeoutError, sync_playwright
 
-USER_EMAIL = ""
-USER_PASSWORD = ""
-STRAVA_EXPORT_PATH = "./Strava_export/"
+from user_data import STRAVA_EXPORT_PATH, USER_EMAIL, USER_PASSWORD
+
 ACTIVITIES_CSV = STRAVA_EXPORT_PATH + "activities.csv"
 
 
